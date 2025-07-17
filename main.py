@@ -45,7 +45,7 @@ async def give_the_result(message: Message):
             await message.reply("This one is empty. Please enter any word : ")
 
 async def main():
-    await dp.start_polling(bot)
+    await dp.start_polling(bot, drop_pending_updates=True)
 
 if __name__ == "__main__":
     asyncio.run(main())
