@@ -1,4 +1,5 @@
 import asyncio
+import os
 
 from aiogram import Bot, Dispatcher
 from aiogram.types import Message
@@ -6,7 +7,7 @@ from aiogram.filters import Command, CommandStart
 from googletrans import Translator
 from get_info import give_all_info
 
-BOT_TOKEN = 'TOKEN'
+BOT_TOKEN =  os.getenv('TOKEN')
 bot = Bot(token=BOT_TOKEN)
 dp = Dispatcher()
 
