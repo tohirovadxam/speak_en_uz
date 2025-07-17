@@ -7,7 +7,7 @@ import logging
 from googletrans import Translator
 from get_info import give_all_info
 
-BOT_TOKEN = '8156314500:AAFpL-gaHSvFGuqZceeyfikGHnemRaQ1rMQ'
+BOT_TOKEN = 'TOKEN'
 bot = Bot(token=BOT_TOKEN)
 dp = Dispatcher()
 
