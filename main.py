@@ -8,7 +8,7 @@ from googletrans import Translator
 from get_info import give_all_info
 
 BOT_TOKEN =  os.getenv('TOKEN')
-bot = Bot(BOT_TOKEN)
+bot = Bot(token=BOT_TOKEN)
 dp = Dispatcher()
 
 @dp.message(CommandStart())
