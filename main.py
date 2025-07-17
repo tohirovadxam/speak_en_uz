@@ -3,7 +3,6 @@ import asyncio
 from aiogram import Bot, Dispatcher
 from aiogram.types import Message
 from aiogram.filters import Command, CommandStart
-import logging
 from googletrans import Translator
 from get_info import give_all_info
 
@@ -47,7 +46,6 @@ async def give_the_result(message: Message):
             await message.reply("This one is empty. Please enter any word : ")
 
 async def main():
-    logging.basicConfig(level=logging.INFO)
     await dp.start_polling(bot)
 
 if __name__ == "__main__":
