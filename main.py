@@ -25,7 +25,7 @@ async def give_the_result(message: Message):
         if message.text:
             lang = await tr.detect(message.text)
             if lang.confidence != 1:
-                await message.reply("WORD NOT FOUND!!!")
+                await message.reply("I can't understand . Please try another one : ")
                 return
             if lang.lang == 'uz':
                 translated = await tr.translate(message.text, dest='en', src='uz')
